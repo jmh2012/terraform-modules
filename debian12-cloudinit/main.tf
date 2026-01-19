@@ -36,8 +36,6 @@ disk {
   ciuser     = "debian"
   sshkeys    = var.ssh_public_key
 
-  tags = "bastion,reverse-proxy"
-
   lifecycle {
     ignore_changes = [
       network,
