@@ -1,4 +1,4 @@
-resource "debian12_vm_qemu" "vm" {
+resource "proxmox_vm_qemu" "vm" {
   name        = var.vm_name
   target_node = var.target_node
   clone       = "debian-12-cloudinit"
