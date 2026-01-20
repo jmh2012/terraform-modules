@@ -31,3 +31,8 @@ variable "disk_size" {
   type        = number
   default     = 20
 }
+
+variable "ssh_public_key" {
+  description = "default user ssh pub key"
+  type        = string
+}
