@@ -14,7 +14,7 @@ resource "debian12_vm_qemu" "vm" {
 
   disk {
     slot     = "scsi0"
-    size     = "var.disk_size
+    size     = var.disk_size
     type     = "disk"
     storage  = "local-lvm"
   }
